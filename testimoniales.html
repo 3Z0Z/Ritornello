@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritornello - Testimoniales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@200;500;700&family=Poppins:wght@200;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="build/css/app.css" />
+    <link rel="icon" href="build/ico/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <a class="logo" href="index.html">
+          <picture>
+            <source class="logo__imagen"srcset="build/img/ritornello-logo-removebg-preview.avif" type="image/avif"/>
+            <source class="logo__imagen"srcset="build/img/ritornello-logo-removebg-preview.webp" type="image/webp"/>
+            <img class="logo__imagen" loading="lazy" src="build/img/ritornello-logo-removebg-preview.png" alt="logo"/>
+          </picture>
+        </a>
+  
+        <div class="navbar__redes">
+          <a class="navbar__redes--enlace" target="_blank" href="https://facebook.com/Ritornello5"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+          <a class="navbar__redes--enlace" target="_blank" href="https://instagram.com/fundacionritornello"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+          <a class="navbar__redes--enlace" target="_blank" href="https://www.tiktok.com/@fundacion_ritornello"><ion-icon name="logo-tiktok" size="large"></ion-icon></a>
+          <a class="navbar__redes--enlace" target="_blank" href="https://www.youtube.com/channel/UCthbxjUm-TPT7qUe3XZnchw"><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+        </div>
+      </div>
+  
+      <ion-icon class="menu__boton" name="reorder-four-outline" size="large"></ion-icon>
+  
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="index.html">Inicio</a>
+          </li>
+          <li class="menu__contenedor" id="hover2">
+            <a class="menu__contenedor--enlace" href="programas.html">Programas de formación</a>
+            <ul class="menu__contenedor--subcontenedor" id="mostrar2">
+              <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#musica">Formación Musical</a></li>
+              <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#teatro">Formación en teatro</a></li>
+              <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#arte">Formación en arte / pintura</a></li>
+            </ul>
+          </li>
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace activo" href="testimoniales.html">Testimonios</a>
+          </li>
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="#">Equipo de trabajo</a>
+          </li>
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="contacto.html">Ubicación y Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="testimoniales">
+        <h2 class="testimoniales__header">Testimoniales</h2>
+        <div class="testimoniales__contenedor">
+  
+          <div class="testimoniales__card">
+            <div class="testimoniales__card--imagen">
+              <picture>
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Juan.avif" type="image/avif">
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Juan.webp" type="image/webp">
+                <img class="testimoniales__card--img" loading="lazy" src="build/img/testimonial-Juan.jpg" alt="Juan testimonial">
+              </picture>
+            </div>
+            <div class="testimoniales__card--info">
+              <h3 class="testimoniales__card--nombre">Juan Martinez</h3>
+              <p class="testimoniales__card--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus inventore, beatae officiis consequuntur culpa ex eligendi earum accusamus eos excepturi maxime iusto officia nihil doloribus delectus, facere quam exercitationem?</p>
+            </div>
+          </div>
+  
+          <div class="testimoniales__card">
+            <div class="testimoniales__card--imagen">
+              <picture>
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Maria.avif" type="image/avif">
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Maria.webp" type="image/webp">
+                <img class="testimoniales__card--img" loading="lazy" src="build/img/testimonial-Maria.jpg" alt="Maria testimonial">
+              </picture>
+            </div>
+            <div class="testimoniales__card--info">
+              <h3 class="testimoniales__card--nombre">Maria Gonzales</h3>
+              <p class="testimoniales__card--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus inventore, beatae officiis consequuntur culpa ex eligendi earum accusamus eos excepturi maxime iusto officia nihil doloribus delectus, facere quam exercitationem?</p>
+            </div>
+          </div>
+  
+          <div class="testimoniales__card">
+            <div class="testimoniales__card--imagen">
+              <img class="testimoniales__card--img" loading="lazy" src="build/img/testimonial-Daniela.webp" alt="Daniela testimonial">
+            </div>
+            <div class="testimoniales__card--info">
+              <h3 class="testimoniales__card--nombre">Daniela Corredor</h3>
+              <p class="testimoniales__card--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus inventore, beatae officiis consequuntur culpa ex eligendi earum accusamus eos excepturi maxime iusto officia nihil doloribus delectus, facere quam exercitationem?</p>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+
+      <section class="testimoniales">
+        <div class="testimoniales__contenedor">
+  
+          <div class="testimoniales__card">
+            <div class="testimoniales__card--imagen">
+              <picture>
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Juan.avif" type="image/avif">
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Juan.webp" type="image/webp">
+                <img class="testimoniales__card--img" loading="lazy" src="build/img/testimonial-Juan.jpg" alt="Juan testimonial">
+              </picture>
+            </div>
+            <div class="testimoniales__card--info">
+              <h3 class="testimoniales__card--nombre">Juan Martinez</h3>
+              <p class="testimoniales__card--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus inventore, beatae officiis consequuntur culpa ex eligendi earum accusamus eos excepturi maxime iusto officia nihil doloribus delectus, facere quam exercitationem?</p>
+            </div>
+          </div>
+  
+          <div class="testimoniales__card">
+            <div class="testimoniales__card--imagen">
+              <picture>
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Maria.avif" type="image/avif">
+                <source class="testimoniales__card--img" srcset="build/img/testimonial-Maria.webp" type="image/webp">
+                <img class="testimoniales__card--img" loading="lazy" src="build/img/testimonial-Maria.jpg" alt="Maria testimonial">
+              </picture>
+            </div>
+            <div class="testimoniales__card--info">
+              <h3 class="testimoniales__card--nombre">Maria Gonzales</h3>
+              <p class="testimoniales__card--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus inventore, beatae officiis consequuntur culpa ex eligendi earum accusamus eos excepturi maxime iusto officia nihil doloribus delectus, facere quam exercitationem?</p>
+            </div>
+          </div>
+  
+          <div class="testimoniales__card">
+            <div class="testimoniales__card--imagen">
+              <img class="testimoniales__card--img" loading="lazy" src="build/img/testimonial-Daniela.webp" alt="Daniela testimonial">
+            </div>
+            <div class="testimoniales__card--info">
+              <h3 class="testimoniales__card--nombre">Daniela Corredor</h3>
+              <p class="testimoniales__card--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus inventore, beatae officiis consequuntur culpa ex eligendi earum accusamus eos excepturi maxime iusto officia nihil doloribus delectus, facere quam exercitationem?</p>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+
+      <div class="boton-flotante">
+        <a href="contacto.html">
+          <ion-icon name="chatbubbles-outline" size="large"></ion-icon>
+        </a>
+      </div>
+
+    <footer class="footer">
+      <p class="footer__mas">Para conocer más sobre nosotros, nuestros proyectos y demás servicios, te invitamos a
+        <a class="footer__mas--enlace" href="https://ritornello.org/web/" target="_blank">www.ritornello.org</a></p>
+      <p class="footer__texto">Copyright © 2023 Ritornello. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="build/js/animations.js"></script>
+  </body>
+</html>

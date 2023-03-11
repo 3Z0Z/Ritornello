@@ -1,0 +1,58 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contacto{
+    background-color: v.$gris;
+    &__header{
+        padding: 3rem;
+        text-align: center;
+        color: v.$primario;
+        background-color: v.$gris;
+        @include m.tablet{
+            padding: 2rem;
+        }
+    }
+    &__titulo{
+        color: v.$secundario;
+        font-size: 2.5rem;
+        &--dos{
+            color: v.$secundario;
+            font-size: 2.5rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    &__informacion{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        @include m.desktop{
+            width: 85%;
+            margin: 0 auto;
+        }
+        &--span{
+            color: v.$secundario;
+            text-decoration: underline;
+        }
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include m.desktop{
+            flex-direction: row;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    &__mapa{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        &--map{
+            margin-top: 1rem;
+            border-radius: 1.5rem;
+        }
+    }
+}

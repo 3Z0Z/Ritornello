@@ -56,17 +56,32 @@
             padding: 0 1rem;
             font-size: 1.8rem;
             text-align: justify;
+            @include m.tablet{
+                font-size: 2rem;
+            }
         }
         &--modalidad{
             margin: 0.5rem 0;
+            padding: 0 1rem;
+            @include m.tablet{
+                font-size: 2rem;
+            }
         }
         &--horario{
             margin: 0.5rem 0;
+            padding: 0 1rem;
+            @include m.tablet{
+                font-size: 2rem;
+            }
         }
         &--deside{
             margin: 1rem 0;
             color: v.$secundario;
             font-size: 2rem;
+            padding: 0 1rem;
+            @include m.tablet{
+                font-size: 2rem;
+            }
         }
     }
 }

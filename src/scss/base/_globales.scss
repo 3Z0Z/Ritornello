@@ -24,3 +24,18 @@ ul {
     color: v.$secundario;
     text-decoration: underline;
 }
+
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+  
+.boton-flotante a {
+    background-color: v.$secundario;
+    color: v.$blanco;
+    text-align: center;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 60%;
+}
