@@ -1,0 +1,45 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;
+    background: darken(v.$gris, 5%);
+    position: relative;
+    &__box{
+        padding: 2rem;
+    }
+    &__redes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &--enlace{
+            margin: 0 0.8rem;
+            @include m.tablet{
+                margin: 0 2rem;
+            }
+            & ion-icon{
+                color: v.$secundario;
+            }
+        }
+    }
+}
+
+.logo{
+    max-width: 50%;
+    margin: 0 0.5rem 0 0;
+    @include m.tablet{
+        margin: 0;
+    }
+    &___imagen{
+        height: 20rem;
+    }
+}

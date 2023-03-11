@@ -1,0 +1,72 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.programa{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    @include m.tablet{
+        margin-bottom: 5rem;
+    }
+    &:first-child{
+        margin-top: 2rem;
+    }
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__header{
+        color: v.$secundario;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        width: 100%;
+        @include m.desktop{
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+    &__imagen{
+        @include m.desktop{
+            min-width: 50%;
+            &--img{
+                min-height: 15rem;
+            }
+        }
+    }
+    &__descripcion{
+        display: flex;
+        flex-direction: column;
+        @include m.tablet{
+            justify-content: center;
+        }
+        &--header{
+            font-size: 2rem;
+            color: v.$primario;
+            text-align: center;
+            @include m.tablet{
+                font-size: 3rem;
+            }
+        }
+        &--texto{
+            margin: 1rem 0;
+            padding: 0 1rem;
+            font-size: 1.8rem;
+            text-align: justify;
+        }
+        &--modalidad{
+            margin: 0.5rem 0;
+        }
+        &--horario{
+            margin: 0.5rem 0;
+        }
+        &--deside{
+            margin: 1rem 0;
+            color: v.$secundario;
+            font-size: 2rem;
+        }
+    }
+}

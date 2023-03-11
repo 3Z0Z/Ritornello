@@ -1,0 +1,62 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.testimoniales{
+    margin: 1rem 0;
+    padding: 0 2rem;
+    @include m.tablet{
+        padding: 0 4rem;
+    }
+    &__header{
+        text-align: center;
+        color: v.$primario;
+        font-size: 2.5rem;
+        @include m.tablet{
+            font-size: 3.2rem;
+        }
+    }
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include m.tablet{
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+    &__card{
+        background-color: v.$primario;
+        border: 0.5rem solid v.$secundario;
+        border-radius: 2rem;
+        margin: 2rem;
+        padding: 1rem;
+        &--imagen{
+            border: 0.3rem solid v.$blanco;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            width: 100%;
+            height: 30rem;
+            margin: 0 auto;
+        }
+        &--img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &--info{
+            margin: 1rem 0;
+        }
+        &--nombre{
+            color: v.$blanco;
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+        }
+        &--texto{
+            color: v.$blanco;
+            margin: 0;
+            padding: 0 1rem;
+            text-align: justify;
+            text-align-last: center;
+        }
+    }
+}

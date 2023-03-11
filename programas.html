@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritornello - Programas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@200;500;700&family=Poppins:wght@200;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="build/css/app.css" />
+    <link rel="icon" href="build/ico/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <a class="logo" href="index.html">
+          <picture>
+            <source class="logo__imagen"srcset="build/img/ritornello-logo-removebg-preview.avif" type="image/avif"/>
+            <source class="logo__imagen"srcset="build/img/ritornello-logo-removebg-preview.webp" type="image/webp"/>
+            <img class="logo__imagen" loading="lazy" src="build/img/ritornello-logo-removebg-preview.png" alt="logo"/>
+          </picture>
+        </a>
+  
+        <div class="navbar__redes">
+          <a class="navbar__redes--enlace" target="_blank" href="https://facebook.com/Ritornello5"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+          <a class="navbar__redes--enlace" target="_blank" href="https://instagram.com/fundacionritornello"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+          <a class="navbar__redes--enlace" target="_blank" href="https://www.tiktok.com/@fundacion_ritornello"><ion-icon name="logo-tiktok" size="large"></ion-icon></a>
+          <a class="navbar__redes--enlace" target="_blank" href="https://www.youtube.com/channel/UCthbxjUm-TPT7qUe3XZnchw"><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+        </div>
+      </div>
+  
+      <ion-icon class="menu__boton" name="reorder-four-outline" size="large"></ion-icon>
+  
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="index.html">Inicio</a>
+          </li>
+          <li class="menu__contenedor" id="hover2">
+            <a class="menu__contenedor--enlace activo" href="programas.html">Programas de formación</a>
+            <ul class="menu__contenedor--subcontenedor" id="mostrar2">
+              <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#musica">Formación Musical</a></li>
+              <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#teatro">Formación en teatro</a></li>
+              <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#arte">Formación en arte / pintura</a></li>
+            </ul>
+          </li>
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="#">Testimonios</a>
+          </li>
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="#">Equipo de trabajo</a>
+          </li>
+          <li class="menu__contenedor">
+            <a class="menu__contenedor--enlace" href="#">Ubicación y Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="programas__header">Programas de formación</h1>
+
+    <main class="main">
+      <div class="programas__main">
+      <div class="programas__flex">
+
+        <div class="programa__flex">
+          <div class="programa">
+            <h2 class="programa__header" id="musica">- Formación Musical:</h2>
+            <div class="programa__container">
+              <div class="programa__imagen">
+                <picture>
+                  <source class="programa__imagen--img" srcset="/build/img/3.avif" type="image/avif">
+                  <source class="programa__imagen--img" srcset="/build/img/3.webp" type="image/webp">
+                  <img class="programa__imagen--img" loading="lazy" src="/build/img/3.jpg" alt="Formación Musical">
+                </picture>
+              </div>
+              <div class="programa__descripcion">
+                <h3 class="programa__descripcion--header">La vida es una nota, interprétala a tu manera</h3>
+                <p class="programa__descripcion--texto">
+                  Innumerables son las ventajas de estudiar música, no importa la edad, pero entre más temprano se inicie, mayores son los beneficios. 
+                  Está comprobado científicamente que: fortalece la capacidad de atención y la creatividad. Estimula la habilidad de concentración y la memoria a corto y largo plazo. 
+                  Facilita el aprendizaje y ejercita la inteligencia. 
+                  El niño o persona que vive en contacto con la música aprende a convivir de mejor manera con otras personas, haciéndose más sensible al mundo que lo rodea.
+                </p>
+                <p class="programa__descripcion--modalidad"><span class="color-secundario">Modalidad:</span> presencial grupal o personalizado, virtual y domicilio.</p>
+                <p class="programa__descripcion--horario"><span class="color-secundario">Horario:</span> martes a viernes: 4 a 6 p.m. / 5 a 7 p.m. Sábados: 8 a 10 a.m. / 9 a 11 a.m. / 10 a 12 p.m.</p>
+                <span class="programa__descripcion--deside">¡Elige tu horario!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="programa">
+            <h2 class="programa__header" id="teatro">- Formación en teatro:</h2>
+            <div class="programa__container">
+              <div class="programa__imagen">
+                <picture>
+                  <source class="programa__imagen--img" srcset="/build/img/3.avif" type="image/avif">
+                  <source class="programa__imagen--img" srcset="/build/img/3.webp" type="image/webp">
+                  <img class="programa__imagen--img" loading="lazy" src="/build/img/3.jpg" alt="Formación Musical">
+                </picture>
+              </div>
+              <div class="programa__descripcion">
+                <h3 class="programa__descripcion--header">La confianza de creer en ti mismo</h3>
+                <p class="programa__descripcion--texto">
+                  Este proceso o práctica artística, estimula el manejo de la respiración y la voz, además de contribuir a mejorar la concentración, disociación, la creatividad, confianza 
+                  en sí mismo, trabajo en equipo, entre otros. Despierta habilidades que son necesarias para el desarrollo integral del individuo, como seguridad, dicción e improvisación.
+                </p>
+                <p class="programa__descripcion--horario"><span class="color-secundario">Horario:</span> martes de 4 a 6 p.m. o 5 a 7 p.m. Sábados de 10 a 12 m.</p>
+                <span class="programa__descripcion--deside">¡Elige tu horario!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="programa">
+            <h2 class="programa__header" id="arte">- Formación en arte/Pintura:</h2>
+            <div class="programa__container">
+              <div class="programa__imagen">
+                <picture>
+                  <source class="programa__imagen--img" srcset="/build/img/3.avif" type="image/avif">
+                  <source class="programa__imagen--img" srcset="/build/img/3.webp" type="image/webp">
+                  <img class="programa__imagen--img" loading="lazy" src="/build/img/3.jpg" alt="Formación Musical">
+                </picture>
+              </div>
+              <div class="programa__descripcion">
+                <h3 class="programa__descripcion--header">Tu vida es un arte. Píntala como quieras</h3>
+                <p class="programa__descripcion--texto">
+                  Consiste en la enseñanza del dibujo y la pintura, teniendo en cuenta que el dibujo es la columna vertebral de las bellas artes. 
+                  Para entender la pintura, primero se debe entender el color desde la teoría del círculo cromático, esto consiste en realizar la capacidad de crear colores secundarios y
+                  terciarios a partir de los colores primarios, los cuales son: amarillo, azul y rojo.
+                </p>
+                <p class="programa__descripcion--horario"><span class="color-secundario">Horario:</span> miércoles de 4 a 6 p.m. o 5 a 7 p.m. Sábados de 8 a 10 a.m. o de 10 a 12 m.</p>
+                <span class="programa__descripcion--deside">¡Elige tu horario!</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__mas">Para conocer más sobre nosotros, nuestros proyectos y demás servicios, te invitamos a
+        <a class="footer__mas--enlace" href="https://ritornello.org/web/" target="_blank">www.ritornello.org</a></p>
+      <p class="footer__texto">Copyright © 2023 Ritornello. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="build/js/animations.js"></script>
+  </body>
+</html>
