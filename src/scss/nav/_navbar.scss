@@ -12,7 +12,7 @@
     justify-content: space-around;
     align-items: center;
     min-width: 100%;
-    background: darken(v.$gris, 5%);
+    background: v.$blanco;
     position: relative;
     &__box{
         padding: 2rem;
@@ -28,18 +28,18 @@
             }
             & ion-icon{
                 color: v.$secundario;
+                width: 5rem;
+                height: 5rem;
             }
         }
     }
 }
 
 .logo{
-    max-width: 50%;
-    margin: 0 0.5rem 0 0;
-    @include m.tablet{
-        margin: 0;
-    }
+    min-width: 35%;
+    max-width: 35%;
+    min-height: 4rem;
     &___imagen{
-        height: 20rem;
+        height: 4rem;
     }
 }

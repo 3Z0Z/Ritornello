@@ -1,6 +1,10 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
+#hover2{
+    position: relative;
+}
+
 .menu{
     min-width: 100%;
     & ul{
@@ -66,9 +70,6 @@
             &:hover{
                 background-color: v.$secundario;
             }
-            @include m.desktop{
-                position: relative;
-            }
         }
         &--subcontenedor{
             display: flex;
@@ -77,8 +78,7 @@
             min-width: 100%;
             @include m.desktop{
                 position: absolute;
-                min-width: 20%;
-                top: 11.8%;
+                top: 100%;
                 display: none;
             }
         }

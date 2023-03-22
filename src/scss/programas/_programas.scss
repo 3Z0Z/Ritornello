@@ -2,13 +2,13 @@
 @use '../base/mixins' as m;
 
 .main{
-    background-color: v.$gris;
+    background-color: v.$blanco;
 }
 
 .programas{
     &__header{
         text-align: center;
-        background-color: v.$gris;
+        background-color: v.$blanco;
         color: v.$primario;
         padding: 4rem;
         @include m.tablet{
@@ -16,10 +16,10 @@
         }
     }
     &__main{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         @include m.tablet{
-            width: 90%;
+            width: 85%;
         }
     }
     &__flex{

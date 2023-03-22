@@ -2,12 +2,12 @@
 @use '../base/mixins' as m;
 
 .contacto{
-    background-color: v.$gris;
+    background-color: v.$blanco;
     &__header{
         padding: 3rem;
         text-align: center;
         color: v.$primario;
-        background-color: v.$gris;
+        background-color: v.$blanco;
         @include m.tablet{
             padding: 2rem;
         }
@@ -35,6 +35,13 @@
             color: v.$secundario;
             text-decoration: underline;
         }
+        &--info{
+            margin: auto 0;
+        }
+    }
+    &__flex{
+        display: flex;
+        gap: 1rem;
     }
     &__container{
         display: flex;
@@ -45,6 +52,9 @@
             width: 90%;
             margin: 0 auto;
         }
+    }
+    &__formulario{
+        margin: 0 auto;
     }
     &__mapa{
         width: 90%;
