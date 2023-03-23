@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritornello - Equipo de trabajo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@200;500;700&family=Poppins:wght@200;500;700&family=Satisfy&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="build/css/app.css" />
+  <link rel="icon" href="build/ico/favicon.ico" />
+</head>
+<body>
+  <header class="header">
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <picture>
+          <source class="logo__imagen"srcset="build/img/ritornello-logo.avif" type="image/avif"/>
+          <source class="logo__imagen"srcset="build/img/ritornello-logo.webp" type="image/webp"/>
+          <img class="logo__imagen" loading="lazy" src="build/img/ritornello-logo.jpg" alt="logo"/>
+        </picture>
+      </a>
+    
+      <div class="navbar__redes">
+        <a class="navbar__redes--enlace" target="_blank" href="https://facebook.com/Ritornello5"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+        <a class="navbar__redes--enlace" target="_blank" href="https://instagram.com/fundacionritornello"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+        <a class="navbar__redes--enlace" target="_blank" href="https://www.tiktok.com/@fundacion_ritornello"><ion-icon name="logo-tiktok" size="large"></ion-icon></a>
+        <a class="navbar__redes--enlace" target="_blank" href="https://www.youtube.com/channel/UCthbxjUm-TPT7qUe3XZnchw"><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+      </div>
+    </div>
+    
+    <ion-icon class="menu__boton" name="reorder-four-outline" size="large"></ion-icon>
+    
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li class="menu__contenedor">
+          <a class="menu__contenedor--enlace" href="index.html">Inicio</a>
+        </li>
+        <li class="menu__contenedor" id="hover2">
+          <a class="menu__contenedor--enlace" href="programas.html">Programas de formación</a>
+          <ul class="menu__contenedor--subcontenedor" id="mostrar2">
+            <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#musica">Formación Musical</a></li>
+            <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#teatro">Formación en teatro</a></li>
+            <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#arte">Formación en arte / pintura</a></li>
+          </ul>
+        </li>
+        <li class="menu__contenedor">
+          <a class="menu__contenedor--enlace" href="testimoniales.html">Testimonios</a>
+        </li>
+        <li class="menu__contenedor">
+          <a class="menu__contenedor--enlace activo" href="equipo.html">Equipo de trabajo</a>
+        </li>
+        <li class="menu__contenedor">
+          <a class="menu__contenedor--enlace" href="contacto.html">Ubicación y Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="equipo">
+    <div class="equipo__container">
+      <h1 class="equipo__titulo">Conócenos</h1>
+      <p class="equipo__texto">Somos una familia emprendedora, que usó sus talentos y sus experiencias para poner en marcha este maravilloso proyecto.</p>
+      <div class="equipo__fundadores">
+        <picture>
+          <source class="equipo__fundadores--img" srcset="build/img/MiembrosFundadores.avif" type="image/avif">
+          <source class="equipo__fundadores--img" srcset="build/img/MiembrosFundadores.webp" type="image/webp">
+          <img class="equipo__fundadores--img" loading="lazy" src="build/img/MiembrosFundadores.jpg" alt="Miembros fundadores">
+        </picture>
+        <h2 class="equipo__fundadores--titulo">Miembros Fundadores</h2>
+      </div>
+
+      <h2 class="equipo__titulo2">Excelente equipo de artistas formadores</h2>
+      
+      <div class="equipo__grid">
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/1.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/1.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/1.png" alt="Profesor Jaime Ballesteros">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">Jaime Manuel Ballesteros</h3>
+          <p class="equipo__tarjeta--area">Director de programas y profesor de violín</p>
+        </div>
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/MariaJose.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/MariaJose.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/MariaJose.jpeg" alt="Profesor Maria Castillo">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">María José Castillo</h3>
+          <p class="equipo__tarjeta--area">Prof. Técnica vocal y piano</p>
+        </div>
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/FotoArabella.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/FotoArabella.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/FotoArabella.jpg" alt="Profesor Ilse Ramirez">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">Ilse Arabella Ramírez</h3>
+          <p class="equipo__tarjeta--area">Prof. Piano y guitarra</p>
+        </div>
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/Esteban.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/Esteban.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/Esteban.jpeg" alt="Profesor Esteban Acosta">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">Esteban Romero Acosta</h3>
+          <p class="equipo__tarjeta--area">Prof. Guitarra y piano</p>
+        </div>
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/Alejandro.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/Alejandro.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/Alejandro.jpeg" alt="Profesor Alejandro Torres">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">Alejandro Torres</h3>
+          <p class="equipo__tarjeta--area">Prof. Piano, batería y bajo</p>
+        </div>
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/ProfeNatalia.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/ProfeNatalia.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/ProfeNatalia.jpeg" alt="Profesora Nathalia Gutierrez">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">Nathalia Gutiérrez</h3>
+          <p class="equipo__tarjeta--area">Prof. Arte/Pintura</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="boton-flotante">
+    <a href="contacto.html">
+      <ion-icon name="chatbubbles-outline" size="large"></ion-icon>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__mas">Para conocer más sobre nosotros, nuestros proyectos y demás servicios, te invitamos a
+      <a class="footer__mas--enlace" href="https://ritornello.org/web/" target="_blank">www.ritornello.org</a></p>
+    <p class="footer__texto">Copyright © 2023 Ritornello. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="build/js/animations.js"></script>
+</body>
+</html>

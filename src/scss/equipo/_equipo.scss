@@ -1,0 +1,77 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.equipo{
+    &__container{
+        max-width: 90%;
+        margin: 0 auto;
+        @include m.tablet{
+            max-width: 85%;
+        }
+        @include m.desktop{
+            max-width: 80%;
+        }
+    }
+    &__titulo{
+        text-align: center;
+        color: v.$primario;
+        margin-top: 1.5rem;
+    }
+    &__titulo2{
+        text-align: center;
+        color: v.$primario;
+        margin: 1.5rem 0 2rem;
+    }
+    &__texto{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+    }
+    &__fundadores{
+        @include m.tablet{
+            max-width: 80%;
+            margin: 0 auto;   
+        }
+        &--titulo{
+            text-align: center;
+            color: v.$secundario;
+            font-size: 3rem;
+            margin: 0.7rem 0;
+            font-family: v.$fuenteTerciaria;
+            @include m.desktop{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    &__grid{
+        display: grid;
+        @include m.desktop{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+    &__tarjeta{
+        &--img{
+            width: 100%;
+            max-height: 40rem;
+            object-fit: cover;
+            @include m.desktop{
+                max-height: 30rem;
+            }
+        }
+        &--nombre{
+            text-align: center;
+            color: v.$secundario;
+            font-family: v.$fuenteTerciaria;
+            font-size: 3rem;
+            margin-top: 0.5rem;
+        }
+        &--area{
+            text-align: center;
+            color: v.$primario;
+            font-family: v.$fuenteTerciaria;
+            font-size: 2rem;
+            margin-top: 0;
+        }
+    }
+}
