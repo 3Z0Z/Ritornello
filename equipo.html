@@ -35,10 +35,10 @@
     <nav class="menu">
       <ul class="menu__lista">
         <li class="menu__contenedor">
-          <a class="menu__contenedor--enlace" href="index.html">Inicio</a>
+          <a class="menu__contenedor--enlace azul-claro" id="enlace1" href="index.html">Inicio</a>
         </li>
         <li class="menu__contenedor" id="hover2">
-          <a class="menu__contenedor--enlace" href="programas.html">Programas de formación</a>
+          <a class="menu__contenedor--enlace azul-medio" id="enlace2" href="programas.html">Programas de formación</a>
           <ul class="menu__contenedor--subcontenedor" id="mostrar2">
             <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#musica">Formación Musical</a></li>
             <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#teatro">Formación en teatro</a></li>
@@ -46,13 +46,13 @@
           </ul>
         </li>
         <li class="menu__contenedor">
-          <a class="menu__contenedor--enlace" href="testimoniales.html">Testimonios</a>
+          <a class="menu__contenedor--enlace azul-oscuro" id="enlace3" href="testimoniales.html">Testimonios</a>
         </li>
         <li class="menu__contenedor">
-          <a class="menu__contenedor--enlace activo" href="equipo.html">Equipo de trabajo</a>
+          <a class="menu__contenedor--enlace activo" id="enlace4" href="equipo.html">Equipo de trabajo</a>
         </li>
         <li class="menu__contenedor">
-          <a class="menu__contenedor--enlace" href="contacto.html">Ubicación y Contacto</a>
+          <a class="menu__contenedor--enlace" id="enlace5" href="contacto.html">Ubicación y Contacto</a>
         </li>
       </ul>
     </nav>
@@ -63,7 +63,7 @@
       <h1 class="equipo__titulo">Conócenos</h1>
       <p class="equipo__texto">Somos una familia emprendedora, que usó sus talentos y sus experiencias para poner en marcha este maravilloso proyecto.</p>
       <div class="equipo__fundadores">
-        <picture>
+        <picture class="equipo__fundadores--picture">
           <source class="equipo__fundadores--img" srcset="build/img/MiembrosFundadores.avif" type="image/avif">
           <source class="equipo__fundadores--img" srcset="build/img/MiembrosFundadores.webp" type="image/webp">
           <img class="equipo__fundadores--img" loading="lazy" src="build/img/MiembrosFundadores.jpg" alt="Miembros fundadores">
@@ -77,9 +77,9 @@
 
         <div class="equipo__tarjeta">
           <picture>
-            <source class="equipo__tarjeta--img" srcset="build/img/1.avif" type="image/avif">
-            <source class="equipo__tarjeta--img" srcset="build/img/1.webp" type="image/webp">
-            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/1.png" alt="Profesor Jaime Ballesteros">
+            <source class="equipo__tarjeta--img" srcset="build/img/DirectorJaime.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/DirectorJaime.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/DirectorJaime.jpeg" alt="Profesor Jaime Ballesteros">
           </picture>
           <h3 class="equipo__tarjeta--nombre">Jaime Manuel Ballesteros</h3>
           <p class="equipo__tarjeta--area">Director de programas y profesor de violín</p>
@@ -133,6 +133,16 @@
           </picture>
           <h3 class="equipo__tarjeta--nombre">Nathalia Gutiérrez</h3>
           <p class="equipo__tarjeta--area">Prof. Arte/Pintura</p>
+        </div>
+
+        <div class="equipo__tarjeta">
+          <picture>
+            <source class="equipo__tarjeta--img" srcset="build/img/DanielVargas.avif" type="image/avif">
+            <source class="equipo__tarjeta--img" srcset="build/img/DanielVargas.webp" type="image/webp">
+            <img class="equipo__tarjeta--img" loading="lazy" src="build/img/DanielVargas.jpg" alt="Profesora Nathalia Gutierrez">
+          </picture>
+          <h3 class="equipo__tarjeta--nombre">Daniel Vargas</h3>
+          <p class="equipo__tarjeta--area">Prof. de teatro</p>
         </div>
 
       </div>

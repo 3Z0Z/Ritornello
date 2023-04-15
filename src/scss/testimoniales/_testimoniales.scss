@@ -2,39 +2,35 @@
 @use '../base/mixins' as m;
 
 .testimoniales{
-    margin: 1rem 0;
-    padding: 0 2rem;
-    @include m.tablet{
-        padding: 0 4rem;
-    }
     &__header{
         text-align: center;
         color: v.$primario;
         font-size: 2.5rem;
+        margin: 2rem 0;
         @include m.tablet{
             font-size: 3.2rem;
         }
     }
     &__contenedor{
+        padding: 2rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        @include m.tablet{
+        gap: 1rem;
+        justify-content: center;
+        @include m.desktop{
             flex-direction: row;
-            gap: 4rem;
+            gap: 3rem;
         }
     }
     &__card{
-        background-color: v.$primario;
-        border: 0.5rem solid v.$secundario;
-        border-radius: 2rem;
         margin: 2rem;
-        padding: 1rem;
+        @include m.desktop{
+            width: 200rem;
+        }
         &--imagen{
-            border: 0.3rem solid v.$blanco;
             border-radius: 1.5rem;
             overflow: hidden;
-            width: 100%;
+            width: 80%;
             height: 30rem;
             margin: 0 auto;
         }
@@ -47,14 +43,14 @@
             margin: 1rem 0;
         }
         &--nombre{
-            color: v.$blanco;
+            color: v.$secundario;
+            font-size: 2rem;
+            text-align: center;
             padding: 0 1rem;
-            margin-bottom: 1rem;
         }
         &--texto{
-            color: v.$blanco;
+            color: black;
             margin: 0;
-            padding: 0 1rem;
             text-align: justify;
             text-align-last: center;
         }

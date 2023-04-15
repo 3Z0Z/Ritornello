@@ -35,10 +35,10 @@
       <nav class="menu">
         <ul class="menu__lista">
           <li class="menu__contenedor">
-            <a class="menu__contenedor--enlace" href="index.html">Inicio</a>
+            <a class="menu__contenedor--enlace azul-claro" id="enlace1" href="index.html">Inicio</a>
           </li>
           <li class="menu__contenedor" id="hover2">
-            <a class="menu__contenedor--enlace" href="programas.html">Programas de formación</a>
+            <a class="menu__contenedor--enlace azul-medio" id="enlace2" href="programas.html">Programas de formación</a>
             <ul class="menu__contenedor--subcontenedor" id="mostrar2">
               <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#musica">Formación Musical</a></li>
               <li class="menu__contenedor--format"><a class="menu__contenedor--subenlace" href="programas.html#teatro">Formación en teatro</a></li>
@@ -46,13 +46,13 @@
             </ul>
           </li>
           <li class="menu__contenedor">
-            <a class="menu__contenedor--enlace" href="testimoniales.html">Testimonios</a>
+            <a class="menu__contenedor--enlace azul-oscuro" id="enlace3" href="testimoniales.html">Testimonios</a>
           </li>
           <li class="menu__contenedor">
-            <a class="menu__contenedor--enlace" href="equipo.html">Equipo de trabajo</a>
+            <a class="menu__contenedor--enlace" id="enlace4" href="equipo.html">Equipo de trabajo</a>
           </li>
           <li class="menu__contenedor">
-            <a class="menu__contenedor--enlace activo" href="contacto.html">Ubicación y Contacto</a>
+            <a class="menu__contenedor--enlace activo" id="enlace5" href="contacto.html">Ubicación y Contacto</a>
           </li>
         </ul>
       </nav>
@@ -62,20 +62,28 @@
 
     <main class="contacto">
       <div class="contacto__informacion">
-        <h3 class="contacto__titulo">Puedes contactarnos con estos datos:</h3>
+        <h3 class="contacto__titulo">Aquí puedes contactarnos:</h3>
         <p class="contacto__flex"><span class="contacto__informacion--span"><ion-icon name="call-sharp" size="large"></ion-icon></span> <span class="contacto__informacion--info">601-768-3047</span></p>
-        <p class="contacto__flex"><span class="contacto__informacion--span"><ion-icon name="logo-whatsapp" size="large"></ion-icon></span> <span class="contacto__informacion--info">(+57) 3153175317</span></p>
+        <a href="https://wa.link/91odzq" target="_blank"><p class="contacto__flex"><span class="contacto__informacion--span"><ion-icon name="logo-whatsapp" size="large"></ion-icon></span> <span class="contacto__informacion--info">(+57) 3153175317</span></p></a>
         <p class="contacto__flex"><span class="contacto__informacion--span"><ion-icon name="mail-sharp" size="large"></ion-icon></span> <span class="contacto__informacion--info">artemusical@ritornello.org</span></p>
       </div>
 
       <div class="contacto__container">
         <div class="contacto__formulario">
-          <h3 class="contacto__titulo--dos">O puedes llenar el formulario:</h3>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegIJvUFfrhVxKTqUm72nFTrm7QycWddXV2cNhAicKtkyka1g/viewform?embedded=true" width="570" height="1514" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          <h3 class="contacto__titulo--dos">O llena este formulario:</h3>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSGaxMYbhDEi47IGxi45RyRODYspEmIQj_OpgEzZ9zHo1Gbw/viewform?embedded=true" width="570" height="1314" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         </div>
-        <div class="contacto__mapa">
-          <h3 class="contacto__titulo">Nuestra ubicación:</h3>
-          <iframe class="contacto__mapa--map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351.4421840173785!2d-74.05483955767069!3d4.750151750870014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a1eca199df%3A0xb53f8d9141732fb6!2sFundaci%C3%B3n%20Art%C3%ADstica%20Y%20Musical%20Ritornello!5e0!3m2!1ses!2sco!4v1648500122436!5m2!1ses!2sco" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+        <div class="contacto__adicional">
+          <div class="contacto__mapa">
+            <h3 class="contacto__titulo--interior">Nuestra ubicación:</h3>
+            <iframe class="contacto__mapa--map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351.4421840173785!2d-74.05483955767069!3d4.750151750870014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85a1eca199df%3A0xb53f8d9141732fb6!2sFundaci%C3%B3n%20Art%C3%ADstica%20Y%20Musical%20Ritornello!5e0!3m2!1ses!2sco!4v1648500122436!5m2!1ses!2sco" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="contacto__llegar">
+            <h3 class="contacto__titulo--interior">Como llegar:</h3>
+            <div class="contacto__video">
+              <iframe src="https://www.youtube.com/embed/RAJ1GRFZSRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </main>

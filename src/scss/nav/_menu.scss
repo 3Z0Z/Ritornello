@@ -6,6 +6,7 @@
 }
 
 .menu{
+    margin-top: 1rem;
     min-width: 100%;
     & ul{
         padding: 0;
@@ -101,5 +102,19 @@
 
 .activo{
     background-color: v.$secundario;
+}
+
+.azul-oscuro{
+    background-color: v.$azul-oscuro;
+    color: v.$blanco;
+}
+
+.azul-medio{
+    background-color: v.$azul-medio;
+    color: v.$blanco;
+}
+
+.azul-claro{
+    background-color: v.$azul-claro;
     color: v.$blanco;
 }

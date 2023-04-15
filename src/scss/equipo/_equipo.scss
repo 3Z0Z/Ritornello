@@ -29,14 +29,17 @@
     }
     &__fundadores{
         @include m.tablet{
-            max-width: 80%;
+            max-width: 50%;
             margin: 0 auto;   
+        }
+        &--img{
+            min-width: 50%;
         }
         &--titulo{
             text-align: center;
             color: v.$secundario;
             font-size: 3rem;
-            margin: 0.7rem 0;
+            margin: 2rem 0 0 0;
             font-family: v.$fuenteTerciaria;
             @include m.desktop{
                 font-size: 3.5rem;
@@ -45,8 +48,12 @@
     }
     &__grid{
         display: grid;
+        @include m.tablet{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
         @include m.desktop{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
         }
     }
@@ -55,8 +62,14 @@
             width: 100%;
             max-height: 40rem;
             object-fit: cover;
+            @include m.tablet{
+                max-height: 14rem;
+            }
             @include m.desktop{
-                max-height: 30rem;
+                max-height: 12rem;
+            }
+            @include m.desktopxl{
+                max-height: 21rem;
             }
         }
         &--nombre{
@@ -64,7 +77,7 @@
             color: v.$secundario;
             font-family: v.$fuenteTerciaria;
             font-size: 3rem;
-            margin-top: 0.5rem;
+            margin-top: 1rem;
         }
         &--area{
             text-align: center;
