@@ -19,6 +19,7 @@
     &__header{
         color: v.$secundario;
         margin-bottom: 2rem;
+        text-align: center;
     }
     &__container{
         display: flex;
@@ -45,7 +46,7 @@
             justify-content: center;
         }
         &--header{
-            font-family: v.$fuenteTerciaria;
+            font-family: v.$fuentePrincipal;
             font-size: 2.5rem;
             color: v.$primario;
             text-align: center;

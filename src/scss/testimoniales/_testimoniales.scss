@@ -4,7 +4,7 @@
 .testimoniales{
     &__header{
         text-align: center;
-        color: v.$primario;
+        color: black;
         font-size: 2.5rem;
         margin: 2rem 0;
         @include m.tablet{
@@ -46,12 +46,15 @@
             color: v.$secundario;
             font-size: 2rem;
             text-align: center;
+            margin-bottom: 1rem;
             padding: 0 1rem;
         }
         &--texto{
             color: black;
+            font-size: 1.4rem;
+            padding: 0 2rem;
             margin: 0;
-            text-align: justify;
+            text-align: center;
             text-align-last: center;
         }
     }

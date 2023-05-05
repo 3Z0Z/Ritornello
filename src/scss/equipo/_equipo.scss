@@ -14,12 +14,12 @@
     }
     &__titulo{
         text-align: center;
-        color: v.$primario;
+        color: black;
         margin-top: 1.5rem;
     }
     &__titulo2{
         text-align: center;
-        color: v.$primario;
+        color: black;
         margin: 1.5rem 0 2rem;
     }
     &__texto{
@@ -74,9 +74,9 @@
         }
         &--nombre{
             text-align: center;
-            color: v.$secundario;
-            font-family: v.$fuenteTerciaria;
-            font-size: 3rem;
+            color: black;
+            font-family: v.$fuentePrincipal;
+            font-size: 1.6rem;
             margin-top: 1rem;
         }
         &--area{

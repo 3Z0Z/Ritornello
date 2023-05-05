@@ -9,7 +9,7 @@
     &__header{
         text-align: center;
         background-color: v.$blanco;
-        color: v.$primario;
+        color: black;
         padding: 4rem;
         @include m.tablet{
             padding: 2rem;
