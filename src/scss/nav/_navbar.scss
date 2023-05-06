@@ -30,6 +30,9 @@
                 color: #71c051;
                 width: 5rem;
                 height: 5rem;
+                @include m.desktop{
+                    color: #82e05c;
+                }
             }
         }
     }
